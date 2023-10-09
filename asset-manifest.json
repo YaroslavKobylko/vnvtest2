@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/vnvtest2/static/css/main.9ba09431.css",
+    "main.js": "/vnvtest2/static/js/main.de2514df.js",
+    "static/media/vnvlogo-05.png": "/vnvtest2/static/media/vnvlogo-05.6328696c9eac305aeaef.png",
+    "static/media/services_audit-illustration.svg": "/vnvtest2/static/media/services_audit-illustration.29120eb6bb0cc8d36f83c99dc9955ccb.svg",
+    "static/media/services_consultation-illustration.svg": "/vnvtest2/static/media/services_consultation-illustration.08e267ffdec09253ba0d972084819e03.svg",
+    "static/media/services_shop-illustration.svg": "/vnvtest2/static/media/services_shop-illustration.22d51e7040c3bf1e7db960d11d4c45b0.svg",
+    "static/media/services_landing-illustration.svg": "/vnvtest2/static/media/services_landing-illustration.e5f3951029c000c6c653673543ea5148.svg",
+    "static/media/services_corporat-illustration.svg": "/vnvtest2/static/media/services_corporat-illustration.5aadbb47f54d43f4ddd26c2517f4c0cf.svg",
+    "index.html": "/vnvtest2/index.html",
+    "static/media/round_hamburger_menu_burger_icon_132782.svg": "/vnvtest2/static/media/round_hamburger_menu_burger_icon_132782.8b6a7595d6ef4abfb30a9df9f9eb3fa6.svg",
+    "main.9ba09431.css.map": "/vnvtest2/static/css/main.9ba09431.css.map",
+    "main.de2514df.js.map": "/vnvtest2/static/js/main.de2514df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ba09431.css",
+    "static/js/main.de2514df.js"
+  ]
+}

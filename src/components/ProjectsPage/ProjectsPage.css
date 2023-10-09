@@ -1,0 +1,116 @@
+/* Стилі для секції "Наші проекти" */
+.projects-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+  }
+  
+  .projects-page h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Стилі для контейнера слайдера */
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Стилі для слайдера */
+  .carousel {
+    width: 100%;
+  }
+  
+  /* Стилі для слайдів у слайдері */
+  .carousel .slide {
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80vh;
+  }
+  
+  /* Стилі для відео в слайді */
+  .carousel .slide video,
+  .carousel .slide image, 
+  .carousel .slide iframe {
+    width: 96%;
+    height: 72vh;
+    object-fit: cover;
+    padding-top: 10px;
+  }
+  
+  /* Стилі для плашки проекту (legend) */
+  .carousel .legend {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Стилі для тексту плашки проекту */
+  .carousel .legend p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  /* Стилі для кнопок прокрутки слайдів (якщо використовуєте їх) */
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  /* Стилі для окремої кнопки прокрутки слайдів */
+  .carousel .control-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Стилі для активної кнопки прокрутки слайдів */
+  .carousel .control-dots .dot.selected {
+    background-color: #333;
+  }
+
+  .carousel .slider{
+    width: 100%;
+  }
+
+  .carousel .control-dots {
+    margin: 0px;
+    position: absolute;
+    bottom: -4px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel .slide .legend {
+  bottom: 8px;
+}
+
+.projects-page{
+  overflow-y: scroll;
+}

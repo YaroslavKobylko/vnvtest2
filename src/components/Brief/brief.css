@@ -1,0 +1,270 @@
+.brief {
+  background-color: black; /* Задайте бажаний колір фону */
+  height: 100vh; /* Висота на весь екран */
+  width: 100%;
+  position: fixed; /* Встановіть позицію в абсолютну */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Додайте потрібні внутрішні відступи */
+  box-sizing: border-box; /* Забезпечте, що padding не збільшує розмір компонента */
+  animation: fadeIn 0.5s ease-in-out;
+}
+  
+  .brief h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .brief label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .brief button {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .brief-close-button {
+    height: 50px;
+    width: 50px;
+    position: absolute; /* Змінимо позицію на абсолютну */
+    top: 20px; /* Позиція зверху */
+    right: 20px; /* Позиція справа */
+    background-color: transparent; /* Прозорий фон */
+    border: none; /* Без границі */
+    cursor: pointer; /* Змінюємо курсор на вказівник при наведенні */
+  }
+
+  .brief-close-button:before, .brief-close-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 2px; /* Ширина ліній */
+    width: 25px; /* Довжина ліній */
+    background-color: #fff; /* Колір ліній */
+    transition: transform 0.25s ease-out, background-color 0.25s ease-out;
+  }
+
+  .brief-close-button:before {
+    transform: translate(-50%, -50%) rotate(45deg); /* Перший хрестик */
+  }
+  
+  .brief-close-button:after {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Другий хрестик */
+  }
+  
+  .brief-close-button:hover:before,
+  .brief-close-button:hover:after {
+    transform: translate(-50%, -50%) rotate(0deg); /* Анімація при наведенні: обертання до 0 градусів */
+    background-color: red; /* Зміна кольору при наведенні */
+  }
+
+  .brief-content {
+    display: flex; /* Розміщуємо .brief-left та .brief-form поруч */
+    width: 100%; /* Весь доступний простір */
+    justify-content: space-between; /* Розмістити між ними простір */
+    align-items: center; /* Вирівнювання в центрі вертикально */
+  }
+  
+.brief-left {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px;
+  display: flex; /* Використовуємо flex для вирівнювання в центрі горизонтально */
+  flex-direction: column; /* Встановлюємо стовпчастий напрямок для дочірніх елементів */
+  justify-content: center; /* Вирівнюємо по вертикалі по центру */
+  align-items: center; /* Вирівнюємо по горизонталі по центру */
+  font-size: 22px;
+  }
+
+  .brief-form {
+    flex: 1; /* Займе 50% ширини доступного простору (права половина) */
+    text-align: right; /* Вирівнювання тексту справа */
+  }
+
+  .brief-left {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .brief-left h2 {
+    font-size: 84px;
+    margin: 0;
+  }
+
+  .map-link {
+    font-size: 14px;
+    margin: 16px;
+    font-weight: normal;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .map-link:hover {
+    transform: scale(1.2); /* Збільшимо масштаб тексту при наведенні */
+  }
+  
+  .email-link {
+    color: white; /* Змініть колір тексту посилання на білий */
+    text-decoration: none; /* Видаліть підкреслення */
+    border-bottom: 1px solid white; /* Додаємо білу лінію під текстом посилання */
+    display: block; /* Зробимо посилання блоковим елементом для правильного відображення лінії */
+    padding-top: 5px; /* Додайте потрібний відступ між текстом і лінією */
+  }
+  
+  .brief-form label {
+    font-size: 18px;
+    color: white; /* Колір тексту лейблів */
+    margin-bottom: 10px;
+  }
+
+  .brief-form {
+    display: flex;
+    justify-content: center; /* Вирівнювання за горизонталлю по центру */
+    align-items: center; /* Вирівнювання за вертикаллю по центру */
+    flex-direction: column; /* Вертикальна орієнтація */
+    text-align: center; /* Горизонтальне центрування тексту */
+    border: 2px solid white; /* Товщина і колір рамки */
+    border-radius: 10px; /* Заокруглені кути */
+    padding: 20px; /* Внутрішні відступи для контенту форми */
+    margin: 0 60px; /* Центрування форми горизонтально */
+    padding: 40px 0px; /* Зменшити внутрішні відступи до 10px */
+  }
+
+  .brief textarea {
+    resize: none;
+  }  
+
+  .brief-form input[type="text"],
+.brief-form input[type="email"],
+.brief-form textarea {
+  font-size: 16px; /* Збільшити розмір шрифту */
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.brief-form button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  width: 200px; /* Фіксована ширина кнопки */
+  white-space: nowrap; /* Запобігає переносу тексту */
+}
+
+.brief-form button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.email-link {
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.email-link::before,
+.email-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0); /* По замовчуванню лінія невидима (ширина 0) */
+  transform-origin: left; /* Точка початку зміни ширини зліва */
+  transition: transform 0.3s ease-in-out;
+}
+
+.email-link::before {
+  transform-origin: right; /* Точка початку зміни ширини справа */
+}
+
+.email-link:hover::before {
+  transform: scaleX(1); /* Збільшення ширини лінії зліва при наведенні */
+}
+
+.email-link:hover::after {
+  transform: scaleX(1); /* Збільшення ширини лінії справа при наведенні */
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  margin: 40px 16px;
+  padding: 5px;
+  border: 1px solid white; /* Біла рамка */
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex; /* Розмістити іконку відразу після тексту */
+  align-items: center; /* Вирівнювання тексту та іконки по вертикалі */
+  color: white;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.social-link svg {
+  margin-right: 5px; /* Зовнішній відступ між текстом і іконкою */
+}
+
+.social-link:hover {
+  transform: scale(1.2); /* Збільшення масштабу при наведенні */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тінь при наведенні */
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .brief-content {
+      flex-direction: column; /* Зміна порядку на колонку з оберненим порядком */
+    }
+
+    .brief-left h2 {
+      font-size: 44px;
+      margin: 0;
+    }
+
+    .social-link {
+      margin: 20px 8px;
+    }
+
+    .brief {
+        overflow-y: scroll;
+    }
+
+    .brief-left {
+      max-height: 30vh;
+    }
+  }

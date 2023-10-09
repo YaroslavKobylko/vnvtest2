@@ -1,0 +1,166 @@
+.service-page{
+    margin: 0px 120px;
+    background-color: white;
+    border-radius: 10px;
+    height: 700px;
+  }
+  
+  /* Меню вибору послуг */
+  .service-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 60px;
+    background-color: grey;
+    border-radius: 10px;
+  }
+  
+
+.service-content {
+    display: flex; /* Використовуємо Flexbox для розміщення блоків */
+    justify-content: space-between; /* Розташовуємо блоки по краях батьківського блоку */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+  }
+  
+  .service-left {
+    display: flex; /* Додаємо display: flex; */
+    flex-direction: column; /* Переконуємося, що текст відображається вертикально */
+    max-width: 60%; /* Задаємо максимальну ширину 60% */
+    align-items: center; /* Вирівнюємо текст по центру горизонтально */
+    text-align: center;
+    flex: 1;
+    padding-bottom: 60px; /* Розтягнемо цей блок, щоб зайняти 50% ширини батьківського блоку */
+  }
+  
+  .service-right {
+    flex: 1; /* Розтягнемо цей блок, щоб зайняти 50% ширини батьківського блоку */
+    text-align: right; /* Вирівнюємо текст справа */
+  }
+
+.service-page h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 20px;
+    color: black;
+  }
+
+  .service-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .service-menu li {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .service-menu li.active {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .content-service h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: black;
+  }
+  
+  .content-service p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: black;
+  }
+  .service-right img {
+    max-height: 480px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 0 60px 12px 0; /* Зменшити відступи до 10px зверху і знизу */
+  }
+
+  .additional-info {
+  font-style: italic;
+  color: #888; /* Колір за вашим бажанням */
+  font-size: 16px; /* Розмір шрифту за вашим бажанням */
+}
+
+.content-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+}
+
+@media (max-width: 768px) {
+    .service-page {
+      overflow-y: scroll;
+      margin: 0px 20px; /* Зменшуємо відступи по боках */
+      height: auto; /* Задаємо автоматичну висоту */
+      padding-bottom: 20px; /* Додаємо відступ знизу */
+    }
+  
+    /* Оновлені стилі для меню вибору послуг */
+    .service-menu {
+      overflow-x: auto;
+      margin: 10px 20px;
+      max-height: 220px; /* Зменшуємо відступи по боках */
+    }
+  
+    /* Оновлені стилі для контенту послуг */
+    .service-content {
+      flex-direction: column; /* Змінюємо напрямок розташування блоків на вертикальний */
+      align-items: center; /* Вирівнюємо по центру по вертикалі */
+    }
+  
+    .service-left {
+      max-width: 100%; /* Забираємо обмеження ширини */
+      text-align: center;
+      padding-bottom: 20px; /* Збільшуємо відступ знизу */
+    }
+  
+    .service-right {
+      text-align: center;
+      margin-top: 20px; /* Додаємо відступ зверху */
+    }
+  
+    .service-menu ul {
+      flex-direction: column;
+      gap: 0px/* Змінюємо напрямок списку на вертикальний */
+    }
+  
+    .service-menu li {
+      margin-bottom: 10px; /* Додаємо відступи між пунктами меню */
+    }
+
+    .service-page h1 {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+  
+    .content-service h2 {
+      font-size: 24px; /* Зменшуємо розмір заголовку */
+    }
+  
+    .content-service p {
+      font-size: 18px; /* Зменшуємо розмір тексту */
+    }
+  
+    .service-right img {
+      max-height: 300px; /* Зменшуємо максимальну висоту зображення */
+    }
+  
+    /* Оновлені стилі для додаткової інформації */
+    .additional-info {
+      font-size: 14px; /* Зменшуємо розмір шрифту для додаткової інформації */
+    }
+
+    .service-content {
+        overflow-y: scroll;
+        max-height: 300px; /* Максимальна висота контейнера, після якої буде з'являтися панель прокрутки */
+      }
+  }

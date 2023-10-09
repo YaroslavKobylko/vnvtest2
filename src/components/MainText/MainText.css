@@ -1,0 +1,56 @@
+
+.main-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .main-content-text {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center; 
+  }
+
+.highlight-text {
+  font-weight: bold;
+  font-style: italic;
+}
+
+  .main-content-title {
+    font-weight:lighter;
+    font-style: Graphik, sans-serif;
+  }
+  
+  .main-content-link {
+    display: inline-block;
+    padding: 12px 24px; /* Збільшуємо внутрішні відступи для кнопки */
+    background-color: #000; /* Чорний колір фону */
+    color: #fff; /* Білий колір тексту */
+    text-decoration: none; /* Видаляємо підкреслення посилання */
+    border: none; /* Видаляємо границю кнопки */
+    border-radius: 4px; /* Закруглені кути */
+    font-size: 20px; /* Збільшуємо розмір тексту */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавна анімація зміни кольору */
+  }
+  
+  .main-content-link:hover {
+    background-color: #fff; /* Змінюємо колір фону при наведенні на кнопку */
+    color: #000; /* Змінюємо колір тексту при наведенні на кнопку */
+  }
+
+  @media (max-width: 768px) {
+    .main-content {
+      width: 90%;
+    }
+  
+    .main-content-text {
+      font-size: 1.2rem;
+    }
+  }

@@ -1,0 +1,92 @@
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+  
+header {
+    color: #fff; /* Змініть колір тексту за потребою */
+  }
+  
+  /* Стилі для контенту заголовку з використанням Flexbox */
+  .header-content {
+    display: flex;
+    align-items: center; /* Вирівнювання вертикально по центру */
+    justify-content: space-between; /* Рівномірний розподіл простору між елементами */
+    padding: 20px 40px; /* Додайте відступи за потребою */
+  }
+  
+  /* Стилі для логотипу */
+  .logo-link {
+    text-decoration: none; /* Видаляємо підкреслення посилання */
+  }
+  
+  .logo {
+    max-width: 150px;
+    max-height: 150px;
+    /* Додаткові стилі для бажаного вигляду логотипу */
+  }
+  
+  /* Стилі для списку посилань */
+  .menu-links {
+    list-style-type: none; /* Видаляємо маркери списку (крапки) */
+    display: flex; /* Використовуємо flexbox для вирівнювання елементів */
+    margin: 0; /* Знімаємо зовнішні відступи списку */
+    padding: 0; /* Знімаємо внутрішні відступи списку */
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .menu-toggle {
+    max-width: 45px; /* Ширина бургера */
+    height: 45px; /* Висота бургера */
+    background-image: url('./round_hamburger_menu_burger_icon_132782.svg'); /* Вказати правильний шлях до вашого SVG-файлу бургера */
+    background-size: cover;
+    cursor: pointer;
+    color:#fff;
+    /* Додайте інші стилі за вашими потребами */
+  }
+
+  .link:hover {
+    transform: scale(1.4); /* Збільшуємо посилання при наведенні */
+    transition: transform 0.8s ease-in-out; /* Додаємо анімацію */
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    color: white;
+    backface-visibility: hidden; /* Забезпечує чітке збільшення тексту */
+    padding-right: 20px;
+  }
+
+.faq-active{
+  transform: scale(1.4);
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: underline; 
+}
+
+  @media (max-width: 768px) {
+    /* Сховати посилання "Чому ми?", "Послуги" і "Наші проекти" */
+    .menu-links li:nth-child(1),
+    .menu-links li:nth-child(2),
+    .menu-links li:nth-child(3),
+    .menu-links li:nth-child(4) {
+      display: none;
+    }
+  }
+

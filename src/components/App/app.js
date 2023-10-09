@@ -12,22 +12,19 @@ function App() {
   const [showBrief, setShowBrief] = useState(false);
   const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate(); // Зміни на useNavigate
+  const navigate = useNavigate();
 
-  // Функція для закриття брифу
   const closeBrief = () => {
     setShowBrief(false);
   };
 
-  // Закрити модальне вікно та перейти на початкову сторінку
   const closeAndRedirectToHome = () => {
     setShowModal(false);
     navigate('/');
   };
 
   useEffect(() => {
-    // При завантаженні компонента показати модальне вікно
-    setShowModal(false); // Зміни на true, якщо ви хочете відображати модальне вікно при завантаженні
+    setShowModal(false);
   }, []);
 
   return (
@@ -36,10 +33,10 @@ function App() {
       <MainText />
       <LoadingAnimation/>
 
-      {/* Відображення компонента Brief, якщо showBrief === true */}
+      {}
       {showBrief && <Brief onClose={closeBrief} />}
       
-      {/* Відображення модального вікна */}
+      {}
       {showModal && <Modal toggleModal={closeAndRedirectToHome} />}
     </div>
   );

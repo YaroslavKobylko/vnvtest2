@@ -17,7 +17,7 @@ function MainText() {
         </h1>
       </div>
       <div className="main-content-button">
-        {/* Переназначте текст кнопки в залежності від стану брифу */}
+        {}
         <button onClick={toggleBrief} className="main-content-link">
           {briefVisible ? 'Close Brief' : 'Contact Us'}
         </button>

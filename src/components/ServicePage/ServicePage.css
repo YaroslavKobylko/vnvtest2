@@ -5,7 +5,7 @@
     height: 700px;
   }
   
-  /* Меню вибору послуг */
+
   .service-menu {
     display: flex;
     justify-content: center;
@@ -16,24 +16,24 @@
   
 
 .service-content {
-    display: flex; /* Використовуємо Flexbox для розміщення блоків */
-    justify-content: space-between; /* Розташовуємо блоки по краях батьківського блоку */
-    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
   }
   
   .service-left {
-    display: flex; /* Додаємо display: flex; */
-    flex-direction: column; /* Переконуємося, що текст відображається вертикально */
-    max-width: 60%; /* Задаємо максимальну ширину 60% */
-    align-items: center; /* Вирівнюємо текст по центру горизонтально */
+    display: flex; 
+    flex-direction: column;
+    max-width: 60%;
+    align-items: center; 
     text-align: center;
     flex: 1;
-    padding-bottom: 60px; /* Розтягнемо цей блок, щоб зайняти 50% ширини батьківського блоку */
+    padding-bottom: 60px;
   }
   
   .service-right {
-    flex: 1; /* Розтягнемо цей блок, щоб зайняти 50% ширини батьківського блоку */
-    text-align: right; /* Вирівнюємо текст справа */
+    flex: 1;
+    text-align: right;
   }
 
 .service-page h1 {
@@ -80,13 +80,13 @@
     max-width: 100%;
     height: auto;
     margin: 10px 0;
-    padding: 0 60px 12px 0; /* Зменшити відступи до 10px зверху і знизу */
+    padding: 0 60px 12px 0;
   }
 
   .additional-info {
   font-style: italic;
-  color: #888; /* Колір за вашим бажанням */
-  font-size: 16px; /* Розмір шрифту за вашим бажанням */
+  color: #888;
+  font-size: 16px;
 }
 
 .content-service{
@@ -99,42 +99,40 @@
 @media (max-width: 768px) {
     .service-page {
       overflow-y: scroll;
-      margin: 0px 20px; /* Зменшуємо відступи по боках */
-      height: auto; /* Задаємо автоматичну висоту */
-      padding-bottom: 20px; /* Додаємо відступ знизу */
+      margin: 0px 20px;
+      height: auto;
+      padding-bottom: 20px;
     }
-  
-    /* Оновлені стилі для меню вибору послуг */
+
     .service-menu {
       overflow-x: auto;
       margin: 10px 20px;
-      max-height: 220px; /* Зменшуємо відступи по боках */
+      max-height: 220px;
     }
   
-    /* Оновлені стилі для контенту послуг */
     .service-content {
-      flex-direction: column; /* Змінюємо напрямок розташування блоків на вертикальний */
-      align-items: center; /* Вирівнюємо по центру по вертикалі */
+      flex-direction: column;
+      align-items: center;
     }
   
     .service-left {
-      max-width: 100%; /* Забираємо обмеження ширини */
+      max-width: 100%;
       text-align: center;
-      padding-bottom: 20px; /* Збільшуємо відступ знизу */
+      padding-bottom: 20px;
     }
   
     .service-right {
       text-align: center;
-      margin-top: 20px; /* Додаємо відступ зверху */
+      margin-top: 20px;
     }
   
     .service-menu ul {
       flex-direction: column;
-      gap: 0px/* Змінюємо напрямок списку на вертикальний */
+      gap: 0px;
     }
   
     .service-menu li {
-      margin-bottom: 10px; /* Додаємо відступи між пунктами меню */
+      margin-bottom: 10px;
     }
 
     .service-page h1 {
@@ -143,24 +141,23 @@
     }
   
     .content-service h2 {
-      font-size: 24px; /* Зменшуємо розмір заголовку */
+      font-size: 24px;
     }
   
     .content-service p {
-      font-size: 18px; /* Зменшуємо розмір тексту */
+      font-size: 18px;
     }
   
     .service-right img {
-      max-height: 300px; /* Зменшуємо максимальну висоту зображення */
+      max-height: 300px;
     }
   
-    /* Оновлені стилі для додаткової інформації */
     .additional-info {
-      font-size: 14px; /* Зменшуємо розмір шрифту для додаткової інформації */
+      font-size: 14px;
     }
 
     .service-content {
         overflow-y: scroll;
-        max-height: 300px; /* Максимальна висота контейнера, після якої буде з'являтися панель прокрутки */
+        max-height: 300px;
       }
   }

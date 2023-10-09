@@ -30,11 +30,11 @@ function Modal({ toggleModal }) {
       </button>
       <div className="left-modal">
         <Link to="/" className="modal-logo" onClick={handleLogoClick}>
-          {/* Додали обробник кліку для лого */}
+          {}
           <img src={vnvLogo} alt="VNV Logo" className="logo" />
         </Link>
         <div className="modal-links">
-          {/* Додайте посилання або інший зміст */}
+          {}
           <Link to="/why-us">Чому ми?</Link>
           <Link to="/service">Послуги</Link>
           <Link to="/projects">Наші проекти</Link>

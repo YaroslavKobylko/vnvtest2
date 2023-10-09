@@ -3,38 +3,35 @@ import Header from '../Header/Header';
 import Brief from '../Brief/Brief';
 import Modal from '../Modal/Modal';
 import Questions from '../Questions/Questions';
-import { useNavigate } from 'react-router-dom'; // Зміни імпорт на useNavigate
+import { useNavigate } from 'react-router-dom';
 
 function FAQ () {
   const [showBrief, setShowBrief] = useState(false);
   const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate(); // Зміни на useNavigate
+  const navigate = useNavigate();
 
-  // Функція для закриття брифу
   const closeBrief = () => {
     setShowBrief(false);
   };
 
-  // Закрити модальне вікно та перейти на початкову сторінку
   const closeAndRedirectToHome = () => {
     setShowModal(false);
     navigate('/');
   };
 
   useEffect(() => {
-    // При завантаженні компонента показати модальне вікно
-    setShowModal(false); // Зміни на true, якщо ви хочете відображати модальне вікно при завантаженні
+    setShowModal(false);
   }, []);
 
   return (
     <div className="page-container">
       <Header burgerMenuOpen={burgerMenuOpen} toggleBurgerMenu={() => setBurgerMenuOpen(!burgerMenuOpen)} />
       <Questions/>
-      {/* Відображення компонента Brief, якщо showBrief === true */}
+      {}
       {showBrief && <Brief onClose={closeBrief} />}
       
-      {/* Відображення модального вікна */}
+      {}
       {showModal && <Modal toggleModal={closeAndRedirectToHome} />}
     </div>
   );

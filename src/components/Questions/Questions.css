@@ -5,12 +5,12 @@
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     width: 80%;
-    margin: 0 auto; /* Горизонтальне центрування */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Вертикальне центрування */
-    justify-content: flex-start; /* Вертикальне центрування */
-    min-height: 68vh; /* Мінімальна висота для центрування по вертикалі */
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 68vh;
     color: black;
   }
   

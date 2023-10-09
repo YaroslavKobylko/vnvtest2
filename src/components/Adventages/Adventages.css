@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* Змінено на flex-start для вирівнювання зверху */
+  align-items: flex-start;
   gap: 30px;
   margin-top: 48px;
-  max-height: 100vh; /* Зробимо контейнер максимально високим по висоті екрану */
+  max-height: 100vh;
 }
 
 .block {
@@ -14,7 +14,7 @@
   background-color: #f7f7f7;
   border-radius: 1%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out; /* Видалено opacity з анімації */
+  transition: transform 0.3s ease-in-out;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .block:hover {
-  transform: scale(1.08); /* Збільшуємо блок при наведенні */
+  transform: scale(1.08);
 }
 
 .button-container {
@@ -109,18 +109,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start; /* Змінено на flex-start для вирівнювання зверху */
+    align-items: flex-start;
     gap: 30px;
     margin-top: 0px;
-    max-height: 70vh; /* Зробимо контейнер максимально високим по висоті екрану */
-    overflow-y: auto; /* Додано верхній відступ */
+    max-height: 70vh;
+    overflow-y: auto;
   }
   .block {
-    flex: 0 0 calc(50% - 40px); /* Зменшуємо розмір блоків для малих екранів */
+    flex: 0 0 calc(50% - 40px);
     height: auto;
   }
 
-/* Анімація для блоків при активації */
 .animate-in {
   transform: translateY(0px) scale(1.15);
   opacity: 1;

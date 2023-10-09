@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './Adventages.css'; // Підключіть стилі для компоненту, якщо є
+import './Adventages.css';
 
 function Adventages() {
   const [animateBlocks, setAnimateBlocks] = useState(false);
 
   useEffect(() => {
-    // Активуємо анімацію після завантаження компонента
     setAnimateBlocks(true);
   }, []);
 

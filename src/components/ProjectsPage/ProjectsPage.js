@@ -4,12 +4,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './ProjectsPage.css';
 
 function ProjectsPage() {
-  // Перелік проектів (фото, відео або посилання на YouTube)
   const projects = [
     {
       id: 1,
-      type: 'youtube', // 'image', 'video', або 'youtube'
-      source: 'https://www.youtube.com/embed/S9bCLPwzSC0?si=C4Ozr-gCl3-QysOf', // посилання на зображення, відео або YouTube
+      type: 'youtube', 
+      source: 'https://www.youtube.com/embed/S9bCLPwzSC0?si=C4Ozr-gCl3-QysOf',
       title: 'Проект 1',
     },
     {
@@ -33,7 +32,7 @@ function ProjectsPage() {
         infiniteLoop={true}
         showStatus={false}
         showThumbs={false}
-        interval={5000} // Змінити інтервал зміни слайдів (в мілісекундах)
+        interval={5000}
       >
         {projects.map((project) => (
           <div key={project.id}>

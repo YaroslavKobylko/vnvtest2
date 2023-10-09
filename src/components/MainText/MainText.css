@@ -30,19 +30,19 @@
   
   .main-content-link {
     display: inline-block;
-    padding: 12px 24px; /* Збільшуємо внутрішні відступи для кнопки */
-    background-color: #000; /* Чорний колір фону */
-    color: #fff; /* Білий колір тексту */
-    text-decoration: none; /* Видаляємо підкреслення посилання */
-    border: none; /* Видаляємо границю кнопки */
-    border-radius: 4px; /* Закруглені кути */
-    font-size: 20px; /* Збільшуємо розмір тексту */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Плавна анімація зміни кольору */
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .main-content-link:hover {
-    background-color: #fff; /* Змінюємо колір фону при наведенні на кнопку */
-    color: #000; /* Змінюємо колір тексту при наведенні на кнопку */
+    background-color: #fff;
+    color: #000;
   }
 
   @media (max-width: 768px) {

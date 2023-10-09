@@ -16,18 +16,17 @@
     }
   }
   
-  /* Стилі для контейнера, який буде анімований */
   .animation-container {
     width: 100%;
     height: 100vh;
-    background-color: #fff; /* Змініть колір фону за необхідності */
+    background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeOut 2s ease 3s forwards; /* Застосування анімації fadeIn протягом 2 секунд, потім анімація fadeOut протягом 2 секунд з затримкою 2 секунди */
+    animation: fadeOut 2s ease 3s forwards;
   }
   
   .lds-roller {
@@ -117,6 +116,6 @@
   }
 
   .animation-container.hide {
-    display: none; /* Приховуйте контейнер після закриття анімації */
-    pointer-events: auto; /* Активуйте знову події кліка та наведення після закриття анімації */
+    display: none;
+    pointer-events: auto;
   }

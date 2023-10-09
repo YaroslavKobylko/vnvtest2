@@ -11,7 +11,7 @@ function Brief({ onClose }) {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    setIsOpen(true); // Після монтування компонента встановлюємо isOpen в true
+    setIsOpen(true);
   }, []);
 
   const handleChange = (e) => {
@@ -21,12 +21,11 @@ function Brief({ onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Тут ви можете виконати дії для збереження даних
   };
 
   const handleClose = () => {
     setIsOpen(false);
-    onClose(); // Викликаємо передану функцію onClose, щоб закрити бриф у батьківському компоненті
+    onClose();
   };
 
   return (
